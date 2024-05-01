@@ -1,6 +1,6 @@
 <?php
 // Define script version
-$scriptVersion = "1";
+$scriptVersion = "1.0";
 // Check if HTTPS is enabled, redirect to HTTPS if not
 if ($_SERVER["HTTPS"] != "on") {
     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
