@@ -1,0 +1,158 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-repeat: repeat; /* To repeat the background image */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 96%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    margin-top: 10px; /* Adding margin to separate the button from other elements */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#uploadStatus {
+    font-size: 16px;
+    color: #007bff;
+}
+
+/* Progress bar styling */
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    /* Adding margin to separate the progress bar from other elements */
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+
+/* style.css */
+
+/* File type button styles */
+.file-type-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.file-type-buttons button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Customize button colors for different file types */
+.file-type-buttons button[data-file-type="jpg"] { background-color: #ffcc00; }
+.file-type-buttons button[data-file-type="png"] { background-color: #0099ff; }
+.file-type-buttons button[data-file-type="gif"] { background-color: #ff6699; }
+.file-type-buttons button[data-file-type="pdf"] { background-color: #ff9933; }
+.file-type-buttons button[data-file-type="doc"] { background-color: #3366cc; }
+.file-type-buttons button[data-file-type="zip"] { background-color: #cc3366; }
+.file-type-buttons button[data-file-type="rar"] { background-color: #66cc33; }
+.file-type-buttons button[data-file-type="mkv"] { background-color: #ff6666; }
+.file-type-buttons button[data-file-type="mp4"] { background-color: #33cccc; }
+.file-type-buttons button[data-file-type="pptx"] { background-color: #ff99cc; }
+.file-type-buttons button[data-file-type="txt"] { background-color: #999999; }
+
+/* style.css */
+
+/* Footer styles */
+.footer {
+    background-color: transparent; /* Set background to transparent */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5); /* Add box shadow behind footer */
+    z-index: 999; /* Ensure footer is above other elements */
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5), -1px -1px 1px rgba(255,255,255,0.5); /* Add multiple shadows to footer menu items */
+}
+
+.footer-menu ul li a:hover {
+    color: #ddd; /* Change link color on hover */
+}
+
+/* Copyright text styles */
+.copyright {
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* Add text shadow to copyright text */
+}
+
+/* style.css */
