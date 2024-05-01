@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyUpload</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body style="background-image: url('images/image4.gif');">
+    <div class="container">
+        <h2>Upload File from URL</h2>
+        <form id="uploadForm" action="nowak.php" method="post">
+            <div class="form-group">
+                <label for="file_url">File URL:</label>
+                <input type="text" id="file_url" name="file_url" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="uploadBtn">Upload</button>
+                <div id="uploadStatus"></div>
+                <div class="progress">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+            </div>
+        </form>
+        <div class="supported-types">
+            <h3>Supported File Types:</h3>
+            <div class="file-type-buttons">
+                <button type="button" data-file-type="jpg">JPG</button>
+                <button type="button" data-file-type="png">PNG</button>
+                <button type="button" data-file-type="pdf">PDF</button>
+                <button type="button" data-file-type="doc">DOC</button>
+                <button type="button" data-file-type="zip">ZIP</button>
+                <button type="button" data-file-type="rar">RAR</button>
+                <button type="button" data-file-type="mkv">MKV</button>
+                <button type="button" data-file-type="mp4">MP4</button>
+                <button type="button" data-file-type="txt">TXT</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-menu">
+            <ul>
+                <li><a href="documentation.html">Docs |</a></li>
+                <li><a href="features.html">Info |</a></li>
+                <li><a href="#">Help |</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 EasyUpload. Made by nowake.dev</p>
+        </div>
+        <div class="version" id="scriptVersion"></div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        // Set script version dynamically
+        document.getElementById("scriptVersion").innerHTML = "Version 1.0.0 <?php echo $scriptVersion; ?>";
+    </script>
+</body>
+</html>

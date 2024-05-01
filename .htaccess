@@ -1,0 +1,23 @@
+# Force HTTPS
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect .htaccess file
+<Files .htaccess>
+    Require all denied
+</Files>
+
+# Protect from clickjacking
+Header always append X-Frame-Options "SAMEORIGIN"
+
+# Protect from XSS attacks
+Header set X-XSS-Protection "1; mode=block"
+
+# Protect from MIME sniffing vulnerabilities
+Header set X-Content-Type-Options "nosniff"
